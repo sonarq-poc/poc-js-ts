@@ -1,11 +1,13 @@
+on:
+  # Trigger analysis when pushing to your main branches, and when creating a pull request.
+  push:
+    branches:
+      - main
+  pull_request:
+      types: [opened, synchronize, reopened]
 
-name: Tests
-
-on: [push]
-
+name: Jest Workflow
 jobs:
-  build:
-    runs-on: ubuntu-latest
   run-jest-tests:
     runs-on: ubuntu-latest
     steps:
