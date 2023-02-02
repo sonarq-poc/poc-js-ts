@@ -18,7 +18,7 @@ jobs:
           node-version: '16'
       - run: npm install
       - run: npm run coverage
-jobs:
+      
   sonarqube:
     runs-on: ubuntu-latest
     steps:
