@@ -1,4 +1,4 @@
-interface User {
+interface Users {
     name: string;
     id: number;
   }
@@ -13,4 +13,4 @@ interface User {
     }
   }
   
-const user: User = new UserAccount("Murphy", 1);
+const user: Users = new UserAccount("Murphy", 1);
