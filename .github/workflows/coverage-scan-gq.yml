@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: '16'
       - name: Install dependencies
-      - run: npm install
+        run: npm install
       - name: Test and Coverage
-      - run: npm run coverage
+        run: npm run coverage
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
@@ -37,8 +37,8 @@ jobs:
         # Force to fail step after specific time.
         timeout-minutes: 5
         env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} #OPTIONAL
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} #OPTIONAL
 
       # Optionally you can use the output from the Quality Gate in another step.
       # The possible outputs of the `quality-gate-status` variable are `PASSED`, `WARN` or `FAILED`.
