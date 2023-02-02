@@ -9,8 +9,6 @@ on:
 
 name: Jest Coverage & Scan & QG Check
 jobs:
-  strategy:
-      max-parallel: 1
   run-jest-with-coverage-tests:
     runs-on: ubuntu-latest
     steps:
