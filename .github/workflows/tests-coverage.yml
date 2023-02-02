@@ -6,9 +6,9 @@ on:
   pull_request:
       types: [opened, synchronize, reopened]
 
-name: Jest Workflow
+name: Jest Coverage Workflow
 jobs:
-  run-jest-tests:
+  run-jest-with-coverage-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
