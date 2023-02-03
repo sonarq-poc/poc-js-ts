@@ -1,11 +1,15 @@
 {
     "license": "UNLICENSED",
     "scripts": {
-        "test": "jest",
-        "coverage": "jest --collectCoverage"
+        "test:unit": "jest --testPathPattern=src/tests",
+        "coverage": "jest --testPathPattern=src/tests --collectCoverage"
     },
     "jest": {
+        "collectCoverage": true,
         "testResultsProcessor": "jest-sonar-reporter"
+    },
+    "jestSonar": {
+        "reportPath": "coverage"
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.18.6",
