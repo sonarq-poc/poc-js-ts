@@ -2,7 +2,7 @@
     "license": "UNLICENSED",
     "scripts": {
         "test:unit": "jest --testPathPattern=src/tests",
-        "coverage": "jest --testPathPattern=src/tests --collectCoverage"
+        "coverage": "jest  --collectCoverage"
     },
     "jest": {
         "collectCoverage": true,
