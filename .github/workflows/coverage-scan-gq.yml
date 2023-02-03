@@ -29,8 +29,6 @@ jobs:
         run: ls -la
       - name: Test and Coverage
         run: npm run coverage
-      - name: Acces coverage folder
-        run: cd coverage
       - name: List folders after
         run: ls -la
 
