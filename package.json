@@ -9,7 +9,9 @@
         "testResultsProcessor": "jest-sonar-reporter"
     },
     "jestSonar": {
-        "reportPath": "coverage"
+        "reportedFilePath": "relative",
+        "reportPath": "coverage",
+        "relativeRootDir": "<rootDir>/../"
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.18.6",
