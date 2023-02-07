@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/m.souza/workspace/poc-js-ts/src/tests/users.test.ts">
+    <testCase name="creates user" duration="2"/>
+  </file>
+  <file path="/Users/m.souza/workspace/poc-js-ts/src/tests/sum.test.js">
+    <testCase name="adds 1 + 2 to equal 3" duration="1"/>
+  </file>
+</testExecutions>
