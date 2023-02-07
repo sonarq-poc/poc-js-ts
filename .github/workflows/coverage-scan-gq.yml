@@ -23,8 +23,15 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm install
+      - name: Get path
+        run: pwd
+      - name: List folders before
+        run: ls -la
       - name: Test and Coverage
         run: npm run coverage
+      - name: List folders after
+        run: ls -la
+
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master

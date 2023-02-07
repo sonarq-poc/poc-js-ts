@@ -1,4 +1,4 @@
-import { UserAccount } from './users';
+import { UserAccount } from '../user';
 
 test('creates user', () => {
     const obj = new UserAccount("Murphy", 1);
